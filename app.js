@@ -1,7 +1,8 @@
-
-let Products = document.querySelector(".products")
-
 // Parameter_Product
+let Products = document.querySelector(".products")
+let cart = [];
+let totalItem = 0
+
 const products = [
     {
         id: 1,
@@ -125,9 +126,6 @@ const products = [
     } 
 ];
 
-let cart = [];
-
-let totalItem = 0
 
 // Function
 function cartData(){
@@ -177,7 +175,7 @@ function onSearch(){
             let newElement = document.createElement('div');
             newElement.classList.add('product_item');
             newElement.innerHTML = `
-            <img decoding="async" src="./Images/Products/${myResult.image}" onclick="window.location.href='sproducts.html'; " alt="${myResult.name}"/>
+            <img decoding="async" src="../Images/Products/${myResult.image}" onclick="window.location.href='sproducts.html'; " alt="${myResult.name}"/>
             <div class="description">
                 <p>${myResult.name}</p>
                 <div class="star">
@@ -214,7 +212,7 @@ function initProducts(){
         let newDiv = document.createElement('div');
         newDiv.classList.add('product_item');
         newDiv.innerHTML = `
-        <img src="./Images/Products/${item.image}" onclick="window.location.href='sproducts.html'; " alt="${item.name}"/>
+        <img decoding="async" src="./Images/Products/${item.image}" onclick="window.location.href='sproducts.html'; " alt="${item.name}"/>
         <div class="description">
             <p>${item.name}</p>
             <div class="star">
