@@ -177,7 +177,7 @@ function onSearch(){
             let newElement = document.createElement('div');
             newElement.classList.add('product_item');
             newElement.innerHTML = `
-            <img src="./images/Products/${myResult.image}" onclick="window.location.href='sproducts.html'; " alt="${myResult.name}"/>
+            <img decoding="async" src="Images/Products/${myResult.image}" onclick="window.location.href='sproducts.html'; " alt="${myResult.name}"/>
             <div class="description">
                 <p>${myResult.name}</p>
                 <div class="star">
