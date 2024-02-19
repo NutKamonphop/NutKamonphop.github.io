@@ -164,7 +164,6 @@ function onSearch(){
     if (inputSearch) {
 
         var inputValue = inputSearch.value;
-        console.log('Input value:', inputValue);
 
         const myResult = products.find(item => item.name.toLowerCase() === inputValue.toLowerCase())
         if (myResult){
