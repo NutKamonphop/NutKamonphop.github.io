@@ -161,13 +161,7 @@ function addToCart(id) {
 function onSearch(){
     var inputSearch = document.getElementById('input-search');
 
-    // Check if the element exists
     if (inputSearch) {
-        // Get the value of the input element
-        var inputValue = inputSearch.value;
-
-        // Log or use the retrieved value
-        console.log('Input value:', inputValue);
 
         const myResult = products.find(item => item.name.toLowerCase() === inputValue.toLowerCase())
         if (myResult){
