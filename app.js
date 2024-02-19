@@ -212,7 +212,7 @@ function initProducts(){
         let newDiv = document.createElement('div');
         newDiv.classList.add('product_item');
         newDiv.innerHTML = `
-        <img decoding="async" src="./Images/Products/${item.image}" onclick="window.location.href='sproducts.html'; " alt="${item.name}"/>
+        <img decoding="async" src="../Images/Products/${item.image}" onclick="window.location.href='sproducts.html'; " alt="${item.name}"/>
         <div class="description">
             <p>${item.name}</p>
             <div class="star">
