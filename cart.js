@@ -222,7 +222,7 @@ function initTable(){
         strHtml+= `
             <tr>
                 <td onclick={onDelete(${item.id})}><i class="fa-regular fa-circle-xmark"></i></td>
-                <td><img src="../Src/Images/Products/${item.image}" alt=""></td>
+                <td><img src="../Images/Products/${item.image}" alt=""></td>
                 <td>${item.name}</td>
                 <td>$${item.price}</td>
                 <td><input type="number" value="1" onchange={onChangeQuantity(this,${item.id})}></td>

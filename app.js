@@ -1,8 +1,7 @@
-// Parameter_Product
-let Products = document.querySelector(".products")
-let cart = [];
-let totalItem = 0
 
+let Products = document.querySelector(".products")
+
+// Parameter_Product
 const products = [
     {
         id: 1,
@@ -126,6 +125,9 @@ const products = [
     } 
 ];
 
+let cart = [];
+
+let totalItem = 0
 
 // Function
 function cartData(){
@@ -161,9 +163,11 @@ function addToCart(id) {
 function onSearch(){
     var inputSearch = document.getElementById('input-search');
 
+    // Check if the element exists
     if (inputSearch) {
-
+        // Get the value of the input element
         var inputValue = inputSearch.value;
+
 
         const myResult = products.find(item => item.name.toLowerCase() === inputValue.toLowerCase())
         if (myResult){
@@ -171,7 +175,7 @@ function onSearch(){
             let newElement = document.createElement('div');
             newElement.classList.add('product_item');
             newElement.innerHTML = `
-            <img src="../Src/Images/Products/${myResult.image}" onclick="window.location.href='sproducts.html'; " alt="${myResult.name}"/>
+            <img src="../Images/Products/${myResult.image}" onclick="window.location.href='sproducts.html'; " alt="${myResult.name}"/>
             <div class="description">
                 <p>${myResult.name}</p>
                 <div class="star">
@@ -208,7 +212,7 @@ function initProducts(){
         let newDiv = document.createElement('div');
         newDiv.classList.add('product_item');
         newDiv.innerHTML = `
-        <img src="../Src/Images/Products/${item.image}" onclick="window.location.href='sproducts.html'; " alt="${item.name}"/>
+        <img src="../Images/Products/${item.image}" onclick="window.location.href='sproducts.html'; " alt="${item.name}"/>
         <div class="description">
             <p>${item.name}</p>
             <div class="star">
