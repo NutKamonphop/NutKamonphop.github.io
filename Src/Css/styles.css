@@ -125,7 +125,7 @@ section {
 }
 
 .header .navbar {
-    background: url();
+    background: url(Images);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -196,7 +196,7 @@ section {
 
 /*Banner Section*/
 .banner_section {
-    background: url('..Src/Images/Background/bg.avif');
+    background: url('/Images/Background/bg.avif');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -773,7 +773,7 @@ section {
 
 /*Footer Section*/
 .footer_wrapper {
-    background: url('..Src/Images/Background/footer_bg.png');
+    background: url('Images/Background/footer_bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
